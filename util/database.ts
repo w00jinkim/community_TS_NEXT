@@ -1,7 +1,6 @@
 import { MongoClient, MongoClientOptions, Db } from "mongodb";
 
-const url =
-  "mongodb+srv://admin:qwer1234@cluster0.vizozms.mongodb.net/?retryWrites=true&w=majority";
+const url = process.env.REACT_APP_MONGODB_URI || "";
 const options: MongoClientOptions = {};
 let client: MongoClient;
 

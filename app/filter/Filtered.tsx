@@ -30,10 +30,7 @@ function Filtered({ result }: Result) {
             key={index}
             className="flex flex-row justify-around py-2 border-b-2 border-dotted"
           >
-            <Link
-              href={`/detail/${result[index]._id}`}
-              className="w-1/2 font-bold"
-            >
+            <Link href={`/detail/${el._id}`} className="w-1/2 font-bold">
               <h4>{el.title}</h4>
             </Link>
             <div>{el?.author}</div>

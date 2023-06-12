@@ -64,7 +64,7 @@ const Modify = ({ session, result }: SessionProps) => {
         }),
       });
     } catch (error) {
-      // 오류 처리
+      console.log(error);
     }
   }
 
